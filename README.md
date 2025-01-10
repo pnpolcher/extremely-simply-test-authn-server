@@ -1,5 +1,7 @@
 # Extremely simple authentication server
 
+## NOTE: This project is still under development
+
 As its name clearly states it, this is an *extremely simple*
 authentication server with the only purpose to make local
 testing easier.
