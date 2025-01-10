@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mock-authnz-server"
+version = "0.1.0"
+description = ""
+authors = ["Pablo Nuñez Pölcher <pablo@pablopolcher.dev>"]
+readme = "README.md"
+packages = [{include = "mock_authnz_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.20"
+uvicorn = "^0.34.0"
+
+[tool.poetry.group.dev.dependencies]
+httpx = "^0.28.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
